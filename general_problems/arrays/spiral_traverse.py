@@ -1,19 +1,10 @@
 def spiralTraverse(array):
     # Print the spiral of a m x n array 
 
-    m = len(array)
-    n = len(array[0])
-    total = m * n
+    sol = []
 
-    cur_iter_count = m - 1
-    count = 0
-    cur_iter_count 
+    while array:
+        sol += array.pop(0)
+        array = list(zip(* array))[::-1]
 
-
-
-
-
-    
-            
-        
-        
+    return sol
