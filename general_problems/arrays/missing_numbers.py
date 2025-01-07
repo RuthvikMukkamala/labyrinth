@@ -4,6 +4,8 @@ def missingNumbers(nums):
     if len(nums) == 1:
         if nums[0] == 1:
             return [2, 3]
+        if nums[0] == 3:
+            return [1, 2]
         else:
             return [1, nums[0] + 1]
 
